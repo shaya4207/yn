@@ -1,0 +1,321 @@
+/*
+Theme Name: 	YentaNews
+Description: 	The Yenta News Official Theme
+Version: 		1.0
+Author: 		Shaya Krauss
+Author URI: 	http://integriaws.com
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import "css/reset.css";
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+body,
+input,
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+					{ /* Place your styles here for all widths greater than 400px */ }
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(images/fabric_1.png) left top repeat;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+}
+
+.wrapper{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	background: #d6d6d6;
+}
+
+.header{
+	position: relative;
+	height: 150px;
+	width: 960px;
+}
+
+.main_menu{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.main_menu li{
+	float: left;
+}
+
+.main_menu li a{
+	display: block;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #838383;
+	color: #89a3b5;
+	font-size: 21px;
+	text-decoration: none;
+	-webkit-box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.main_menu li a:hover, .main_menu li a.active{
+	background: #565555;
+	color: #d0e2ee;
+}
+
+
+
+
+
+
+
+.content{
+	position: relative;
+	width: 960px;
+	background: #565555;
+}
+
+.main_content{
+	position: relative;
+	width: 740px;
+	margin: 0;
+	padding: 15px 5px 15px 15px;
+	float: left;
+}
+
+.right_sidebar{
+	position: relative;
+	width: 185px;
+	float: left;
+	margin: 15px 0 0;
+	background: #fff;
+}
+
+.news_home{
+	position: relative;
+	width: 330px;
+	padding: 15px;
+	margin: 0 10px 15px 0;
+	text-decoration: none;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float: left;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.news_home:hover{
+	background: #a09f9f;
+	color: #fff;
+}
+
+.news_home:hover .headline_home{
+	color: #0e639e;
+}
+
+.news_home:hover .text_home{
+	color: #fff;
+}
+
+.news_home:hover .date_home{
+	color: #555;
+}
+
+.news_home .headline_home{
+	font-size: 21px;
+	color: #3f83b2;
+}
+
+.news_home .date_home{
+	display: block;
+	font-size: 12px;
+	color: #949596;
+	float: right;
+	font-style: italic;
+}
+
+.news_home p{
+	font-size: 13px;
+	color: #000;
+	line-height: 17px;
+	text-align: justify;
+}
+
+.news_home p img{
+	padding: 0 10px 10px 0;
+}
+
+
+
+
+
+
+.news_article{
+	position: relative;
+	width: 680px;
+	padding: 30px 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.news_article .headline_article{
+	font-size: 27px;
+	color: #3f83b2;
+}
+
+.news_article .date_article{
+	display: block;
+	font-size: 12px;
+	color: #949596;
+	font-style: italic;
+	float: right;
+}
+
+.news_article p{
+	font-size: 15px;
+	color: #000;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.news_article p img{
+	padding: 0 15px 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear{
+	clear: both;
+}
