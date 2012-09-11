@@ -9,10 +9,7 @@
  * @since 		Starkers 4.0
  */
 ?>
-<?php get_template_part(  'parts/shared/html-header' ); ?>
-
-<div class="wrapper">
-	<?php get_template_part(  'parts/shared/header'  ); ?>
+<?php get_template_part(  'parts/shared/header'  ); ?>
 	<div class="content">
 		<div class="main_content">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

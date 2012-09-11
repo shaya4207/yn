@@ -168,7 +168,7 @@ body{
 	transition: all 0.2s ease;
 }
 
-.main_menu li a:hover, .main_menu li a.active{
+.main_menu li a:hover, .main_menu li.current_page_item a{
 	background: #565555;
 	color: #d0e2ee;
 }
