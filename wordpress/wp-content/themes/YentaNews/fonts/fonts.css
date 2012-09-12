@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'yn';
+	src:url('yn.eot');
+	src:url('yn.eot?#iefix') format('embedded-opentype'),
+		url('yn.svg#yn') format('svg'),
+		url('yn.woff') format('woff'),
+		url('yn.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
