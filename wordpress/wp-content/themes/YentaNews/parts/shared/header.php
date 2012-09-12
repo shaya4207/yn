@@ -6,6 +6,7 @@
 						wp_page_menu('show_home=Home');
 					?>
 				</ul>
+				<?php get_search_form(); ?>
 			</div>
 <?php
 /*

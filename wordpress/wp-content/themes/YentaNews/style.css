@@ -116,29 +116,31 @@ body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: url(images/fabric_1.png) left top repeat;
+	background: url(images/gray_sand.png) left top repeat;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 16px;
 }
 
 .wrapper{
 	position: relative;
-	width: 960px;
+	width: 90%;
 	margin: 0 auto;
-	background: #d6d6d6;
+	background: #f2f2f2;
 }
 
 .header{
 	position: relative;
 	height: 150px;
-	width: 960px;
+	width: 100%;
 }
 
 .main_menu{
 	position: absolute;
-	right: 0;
+	left: 0;
 	bottom: 0;
 	height: 40px;
+	width: 100%;
+	border-bottom: 3px solid #000;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -154,13 +156,13 @@ body{
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	background: #838383;
-	color: #89a3b5;
+	background: #b6b5b5;
+	color: #52758e;
 	font-size: 21px;
 	text-decoration: none;
-	-webkit-box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
-	box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: inset -6px 6px 9px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset -6px 6px 9px rgba(0, 0, 0, 0.75);
+	box-shadow: inset -6px 6px 9px rgba(0, 0, 0, 0.75);
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -168,50 +170,55 @@ body{
 	transition: all 0.2s ease;
 }
 
-.main_menu li a:hover, .main_menu li.current_page_item a{
-	background: #565555;
+.main_menu li.current_page_item a{
+	background: #f2f2f2;
+	color: #7ca0b8;
+}
+
+.main_menu li a:hover{
+	background: #919090;
 	color: #d0e2ee;
 }
 
 
 
 
-
-
-
 .content{
 	position: relative;
-	width: 960px;
-	background: #565555;
+	width: 100%;
+	background: #f2f2f2;
 }
 
 .main_content{
 	position: relative;
-	width: 740px;
+	width: 65%;
+	padding: 15px 15px 5px 15px;
 	margin: 0;
-	padding: 15px 5px 15px 15px;
 	float: left;
+	box-sizing: border-box;
 }
 
 .right_sidebar{
 	position: relative;
-	width: 185px;
-	float: left;
-	margin: 15px 0 0;
-	background: #fff;
+	width: 30%;
+	float: right;
+	margin: 15px 15px 0 0;
+	padding:15px;
+	background: #999;
+	box-sizing: border-box;
 }
 
 .news_home{
+	display: inline-block;
 	position: relative;
-	width: 330px;
-	padding: 15px;
-	margin: 0 10px 15px 0;
+	width: 100%;
+	padding: 10px 15px;
+	margin: 10px;
 	text-decoration: none;
 	background: #fff;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -220,7 +227,7 @@ body{
 }
 
 .news_home:hover{
-	background: #a09f9f;
+	background: #c4c4c4;
 	color: #fff;
 }
 
@@ -237,8 +244,10 @@ body{
 }
 
 .news_home .headline_home{
+	display: inline-block;
 	font-size: 21px;
 	color: #3f83b2;
+	margin-bottom: 5px;
 }
 
 .news_home .date_home{
@@ -253,11 +262,27 @@ body{
 	font-size: 13px;
 	color: #000;
 	line-height: 17px;
-	text-align: justify;
+	text-align: left;
 }
 
 .news_home p img{
 	padding: 0 10px 10px 0;
+	height: 75px;
+	width: auto !important;
+}
+
+.news_home .read_more{
+	display: none;
+	position:  absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	color: #aaa;
+	padding: 10px;
+	background: #555;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 
@@ -291,7 +316,7 @@ body{
 .news_article p{
 	font-size: 15px;
 	color: #000;
-	text-align: justify;
+	text-align: left;
 	line-height: 20px;
 }
 
@@ -301,6 +326,46 @@ body{
 
 
 
+
+
+
+
+/********************** Search ***********************/
+.searchform{
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+}
+
+.searchform .s{
+	display: inline-block;
+	height: 40px;
+	width: 250px;
+	border: none;
+	padding: 0 10px;
+	font-weight: bold;
+	box-sizing: border-box;
+	-webkit-box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 6px 6px 9px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.searchform input[type="submit"]{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #B6B5B5;
+	border: none;
+	font-size: 18px;
+	font-family: 'yn';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+}
+
+.searchform input[type="submit"]:hover{
+	background: #919090;
+}
 
 
 

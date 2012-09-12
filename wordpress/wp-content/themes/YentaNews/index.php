@@ -29,8 +29,10 @@
 					  the_post_thumbnail();
 					} 
 					?>
-				<?php the_excerpt(); ?>
+				<?php the_advanced_excerpt(); ?>
+				<div class="read_more">Continue Reading &rarr;</div>
 			</a>
+			<hr />
 		<?php
 		/*
 			<li>
