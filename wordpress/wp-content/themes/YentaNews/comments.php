@@ -33,7 +33,7 @@
 	<h2><?php comments_number(); ?></h2>
 
 	<ol>
-		<?php wp_list_comments( array( 'callback' => 'starkers_comment' ) ); ?>
+		<?php wp_list_comments(); ?>
 	</ol>
 
 	<?php
@@ -47,6 +47,6 @@
 	
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php comment_form('comment_notes_after='); ?>
 
 </div><!-- #comments -->

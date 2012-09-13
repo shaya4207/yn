@@ -13,16 +13,17 @@
 	<div class="content">
 		<div class="main_content">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<div class="news_article"> <span class="headline_article">
-				<h1><?php the_title(); ?></h1>
-				</span><br />
+			<div class="news_article"> 
+				<span class="headline_article">
+					<h1><?php the_title(); ?></h1>
+				</span>
 				<span class="date_article">
 				<?php the_time('l ~ M d, Y ~ h:ia')?>
 				</span>
 				<div class="clear"></div>
-				<?php the_content(); ?>
+				<?php the_content(); ?><p>&nbsp;</p>
+				<?php comments_template( '', true ); ?>
 			</div>
-			<?php comments_template( '', true ); ?>
 			<?php
 /*
 <article>

@@ -1,6 +1,11 @@
 jQuery(document).ready(function($) {
 	general($);
+	main_menu($);
 });
+
+jQuery(window).resize(function($){
+	main_menu($);
+})
 
 function general($){
 	$('.news_home img').attr('align','left');//gives the image in .news_home align="left"
@@ -17,4 +22,9 @@ function general($){
 			})
 		})
 	})
+}
+
+function main_menu($){
+//	$width = $('.header').width();
+//	$('.main_menu').css('width',($width - 305)+'px');
 }
