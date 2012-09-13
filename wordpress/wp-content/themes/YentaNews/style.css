@@ -59,68 +59,6 @@ h4,
 h5, 
 h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
 
-/* ---------------------------------------------------------------------------------------------------------- 
-03 Media queries (using a mobile-first approach) ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-/* 400 and up */
-@media screen and (min-width:400px) {
-
-					{ /* Place your styles here for all widths greater than 400px */ }
-
-}
-
-/* Retina Display */
-@media screen and (-webkit-min-device-pixel-ratio:2) {
-
-					{ /* Place your styles here for all 'Retina' screens */ }
-
-}
-
-@media screen and (max-width: 900px){
-	.main_menu{
-		width: 100%;
-	}
-	.main_menu li{
-		width: 25%;
-	}
-	.main_content{
-		width: 65%;
-	}
-}
-
-@media screen and (min-width: 900px){
-	.main_menu{
-		width: 810px;
-	}
-	.main_menu li{
-		width: 25%;
-	}
-	.main_content{
-		width: 65%;
-	}
-}
-
-@media screen and (max-width: 530px){
-	.main_menu{
-		width: 100%;
-	}
-	.main_menu li{
-		width: 50%;
-	}
-	.main_content{
-		width: 65%;
-	}
-}
-
-@media screen and (max-width: 360px){
-	.right_sidebar{
-		display: none;
-	}
-	.main_content{
-		width: 90%;
-	}
-}
 
 
 
@@ -439,4 +377,83 @@ body{
 
 .clear{
 	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+					{ /* Place your styles here for all widths greater than 400px */ }
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
+
+@media screen and (max-width: 900px){
+	.main_menu{
+		width: 100%;
+	}
+	.main_menu li{
+		width: 25%;
+	}
+	.main_content{
+		width: 65%;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.main_menu{
+		width: 810px;
+	}
+	.main_menu li{
+		width: 25%;
+	}
+	.main_content{
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 530px){
+	.main_menu{
+		width: 100%;
+	}
+	.main_menu li{
+		width: 50%;
+	}
+	.main_content{
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.right_sidebar{
+		display: none;
+	}
+	.main_content{
+		width: 90%;
+		padding: 15px 0;
+	}
+	.news_home, .news_article{
+		width: 94%;
+		margin: 5px 3%;
+	}
 }
