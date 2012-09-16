@@ -224,6 +224,7 @@ body{
 
 .news_home .headline_home{
 	display: inline-block;
+	width: 65%;
 	font-size: 21px;
 	color: #3f83b2;
 	margin-bottom: 5px;
@@ -452,7 +453,7 @@ body{
 
 @media screen and (max-width: 400px){
 	.resp hr{
-		width: 80%;
+		display: none;
 	}
 	.resp .wrapper{
 		width: 100%;
@@ -476,9 +477,9 @@ body{
 	.resp .news_home{
 		display: inline-block;
 		position: relative;
-		width: 100%;
+		width: 94%;
 		padding: 3px;
-		margin-bottom: 10px;
+		margin: 2px 3% 0 3%;
 		text-decoration: none;
 		background: #fff;
 		-webkit-border-radius: 3px;
@@ -489,7 +490,7 @@ body{
 		background: #fff;
 		color: ##0E639E;
 	}
-	.resp .news_home, .news_article{
+	.resp .news_article{
 		width: 94%;
 		margin: 3%;
 	}
