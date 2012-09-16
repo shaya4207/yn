@@ -227,6 +227,7 @@ body{
 	font-size: 21px;
 	color: #3f83b2;
 	margin-bottom: 5px;
+	float: left;
 }
 
 .news_home .date_home{
@@ -252,6 +253,7 @@ body{
 
 .news_home .only400{
 	display: none;
+	float: left;
 }
 
 .news_home .read_more{
