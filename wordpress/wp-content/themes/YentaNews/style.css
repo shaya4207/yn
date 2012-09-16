@@ -437,41 +437,41 @@ body{
 }
 
 @media screen and (max-width: 530px){
-	.main_menu{
+	.resp .main_menu{
 		width: 100%;
 	}
-	.main_menu li{
+	.resp .main_menu li{
 		width: 50%;
 	}
-	.main_content{
+	.resp .main_content{
 		width: 65%;
 	}
 }
 
 @media screen and (max-width: 400px){
-	hr{
+	.resp hr{
 		width: 80%;
 	}
-	.wrapper{
+	.resp .wrapper{
 		width: 100%;
 	}
-	.header{
+	.resp .header{
 		height: 125px;
 	}
-	.main_menu li a{
+	.resp .main_menu li a{
 		height: 30px;
 		line-height: 30px;
 		font-size: 16px;
 		font-weight: bold;
 	}
-	.right_sidebar{
+	.resp .right_sidebar{
 		display: none;
 	}
-	.main_content{
+	.resp .main_content{
 		width: 97%;
 		padding: 15px 0;
 	}
-	.news_home{
+	.resp .news_home{
 		display: inline-block;
 		position: relative;
 		width: 100%;
@@ -483,36 +483,36 @@ body{
 		-moz-border-radius: 3px;
 		border-radius: 3px;
 	}
-	.news_home:hover{
+	.resp .news_home:hover{
 		background: #fff;
 		color: ##0E639E;
 	}
-	.news_home, .news_article{
+	.resp .news_home, .news_article{
 		width: 94%;
 		margin: 3%;
 	}
-	.news_home .headline_home{
+	.resp .news_home .headline_home{
 		font-size: 13px;
 	}
-	.news_home .date_home{
+	.resp .news_home .date_home{
 		font-size: 10px;
 	}
-	.news_home .only400{
+	.resp .news_home .only400{
 		display: inline-block;
 	}
-	.news_home .only400 img.current{
+	.resp .news_home .only400 img.current{
 		height: 50px;
 		width: auto !important;
 		margin-right: 15px;
 		vertical-align: bottom;
 	}
-	.news_home p{
+	.resp .news_home p{
 		display: none;
 	}
-	.news_home .read_more{
+	.resp .news_home .read_more{
 		display: none;
 	}
-	.news_article{
+	.resp .news_article{
 		width: 96%;
 		padding: 3px;
 		margin-bottom: 10px;
@@ -521,31 +521,27 @@ body{
 		-moz-border-radius: 3px;
 		border-radius: 3px;
 	}
-	.news_article .headline_article{
+	.resp .news_article .headline_article{
 		font-size: 20px;
 	}
-
-	.news_article .date_article{
+	.resp .news_article .date_article{
 		font-size: 10px;
 	}
-
-	.news_article p{
+	.resp .news_article p{
 		font-size: 14px;
 		color: #000;
 		text-align: left;
 		line-height: 16px;
 	}
-
-	.news_article p img{
+	.resp .news_article p img{
 		width: 50%;
 		height: auto !important;
 		padding: 3px 15px 15px 3px;
 	}
-	.searchform{
+	.resp .searchform{
 		display: none;
 	}
-
-	textarea#comment{/*the comment textarea*/
+	.resp textarea#comment{/*the comment textarea*/
 		width: 80%;
 
 	}
