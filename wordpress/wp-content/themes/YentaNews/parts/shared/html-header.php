@@ -14,9 +14,4 @@
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/fonts/fonts.css">
 		<?php wp_head(); ?>
 	</head>
-	<body <?php if(!isset($_COOKIE['resp']) || $_COOKIE['resp'] == 'yes'){
-			body_class('resp');
-		}else{
-			body_class('');
-		}
-		 ?>>
+	<body <?php body_class('');?>>

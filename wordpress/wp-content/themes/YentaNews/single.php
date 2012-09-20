@@ -22,6 +22,13 @@
 				</span>
 				<div class="clear"></div>
 				<?php the_content(); ?><p>&nbsp;</p>
+				<?php
+					if(get_comments_number() > 0){
+				?>
+						<a href="#" class="show_comments">Show Comments</a>
+				<?php
+					}
+				?>
 				<?php comments_template( '', true ); ?>
 			</div>
 			<?php

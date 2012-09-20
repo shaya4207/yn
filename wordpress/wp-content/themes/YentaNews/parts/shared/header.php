@@ -1,7 +1,6 @@
 <?php get_template_part('parts/shared/html-header');?>
 		<div class="wrapper">
 			<div class="header">
-				<a href="" class="rwd">View Full Site</a>
 				<ul class="main_menu">
 					<?php
 						wp_page_menu('show_home=Home');

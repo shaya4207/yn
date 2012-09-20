@@ -29,7 +29,10 @@
 					<?php the_title(); ?>
 				</span>
 				<div class="clear"></div>
-				<?php the_advanced_excerpt(); ?>
+				<?php strip_tags(the_advanced_excerpt()); ?>
+				<span class="comments_count">
+					<?php comments_number('','(1 Comment)','(% Comments)')?>
+				</span>
 				<div class="read_more">Continue Reading &rarr;</div>
 			</a>
 			<hr />
