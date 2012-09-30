@@ -140,11 +140,11 @@ function general($){
 
 function comments($){
 	$('.show_comments').toggle(function(){
-		$('#comments').show();
+		$('#comments h2, #comments ol').show();
 		$('.show_comments').text('Hide Comments');
 		return false;
 	},function(){
-		$('#comments').hide();
+		$('#comments h2, #comments ol').hide();
 		$('.show_comments').text('Show Comments');
 		return false;
 	})

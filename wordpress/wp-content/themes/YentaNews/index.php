@@ -22,20 +22,17 @@
 		<?php while ( have_posts() ) : the_post(); ?>
 			<a href="<?php esc_url( the_permalink() ); ?>" title="<?php the_title(); ?>" class="news_home">
 				<span class="date_home"><?php the_time( 'm/d/Y g:ia' ); ?></span>
-				<div class="only400">
-					<?php echo_first_image(get_the_ID());?>
-				</div>
 				<span class="headline_home">
 					<?php the_title(); ?>
 				</span>
 				<div class="clear"></div>
+				<?php echo_first_image(get_the_ID());?>
 				<?php strip_tags(the_advanced_excerpt()); ?>
 				<span class="comments_count">
 					<?php comments_number('','(1 Comment)','(% Comments)')?>
 				</span>
 				<div class="read_more">Continue Reading &rarr;</div>
 			</a>
-			<hr />
 		<?php
 		/*
 			<li>

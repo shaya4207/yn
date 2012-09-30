@@ -47,6 +47,17 @@
 	
 	<?php endif; ?>
 
-	<?php comment_form('comment_notes_after='); ?>
+	<?php
+		$fields = array(
+					'author' => '<p><input id="author" name="author" type="text" placeholder="Name *" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
+					'email' => '<p><input id="email" name="email" type="text" placeholder="Email *" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>'
+				);
+		$args = array(
+					'fields' => $fields,
+					'comment_field' => '<p><textarea id="comment" name="comment" placeholder="Comment..." cols="45" rows="8" aria-required="true"></textarea></p>',
+					'comment_notes_after' => '',
+				);
+		comment_form($args);
+	?>
 
 </div><!-- #comments -->

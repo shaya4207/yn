@@ -2,6 +2,8 @@
 /**
  * The template for displaying Archive pages.
  *
+ * Template Name: Archive Page
+ *
  * Used to display archive-type pages if nothing more specific matches a query.
  * For example, puts together date-based pages if no date.php file exists.
  *
