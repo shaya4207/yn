@@ -122,7 +122,7 @@ jQuery(document).ready(function($) {
 function general($){
 	$('.news_home img').attr('align','left');//gives the image in .news_home align="left"
 	$('.news_article img').attr('align','left');//gives the image in .news_article align="left"
-	$('.news_home').each(function(){
+/*	$('.news_home').each(function(){
 		$(this).mouseover(function(){
 			if($(window).width() >= 400){
 				$parent = $(this);
@@ -135,7 +135,7 @@ function general($){
 				})
 			}
 		})
-	})
+	})*/
 }
 
 function comments($){

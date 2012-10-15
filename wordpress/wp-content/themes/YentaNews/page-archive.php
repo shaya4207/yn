@@ -20,22 +20,17 @@
 
 		<?php if ( have_posts() ): ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="news_home">
-				<span class="date_home"><?php the_time( 'm/d/Y g:ia' ); ?></span>
-				<a href="<?php esc_url( the_permalink() ); ?>" title="<?php the_title(); ?>" class="headline_home">
-					<?php the_title(); ?>
-				</a>
-				<div class="clear"></div>
-				<?php echo_first_image(get_the_ID());?>
-				<?php strip_tags(the_advanced_excerpt()); ?>
-				<div class="bottom_links">
-					<a href="<?php esc_url(the_permalink());?>" class="read_on">Read On...</a> | 
-					<a href="<?php esc_url( the_permalink() ); ?>#comments" class="comments_count">
-						<?php comments_number('(0 Comments)','(1 Comment)','(% Comments)')?>
-					</a>
-				</div>
-				<!-- <div class="read_more">Continue Reading &rarr;</div> -->
-			</div>
+			<ul>
+				<?php
+					$args = array(
+						'type' => 'postbypost',
+						'format' => 'custom',
+						'before' => '<div class="news_home">',
+						'after' => '</div>',
+					);
+					wp_get_archives($args);
+				?>
+			</ul>
 		<?php
 		/*
 			<li>
