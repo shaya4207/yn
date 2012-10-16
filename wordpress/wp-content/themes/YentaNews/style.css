@@ -121,6 +121,8 @@ body{
 }
 
 .logo_main{
+	text-indent: -9999px;
+	overflow: hidden;
 	width: 200px;
 	height: 100px;
 	background: url('images/logo.png') left top no-repeat;
