@@ -480,6 +480,48 @@ body{
 
 
 
+/*************************** Comments ************************/
+.navigation{
+	position: relative;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.navigation a{
+	text-decoration: none;
+	color: #3F83B2;
+}
+
+.navigation a:hover, .navigation a:focus{
+	text-decoration: underline;
+}
+.navigation .alignleft{
+	float: left;
+	margin-left: 30px;
+}
+
+.navigation .alignright{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -589,9 +631,9 @@ body{
 	.news_home{
 		display: inline-block;
 		position: relative;
-		width: 94%;
+		width: 100%;
 		padding: 3px;
-		margin: 2px 3% 0 3%;
+		margin: 2px 0 0;
 		text-decoration: none;
 		background: #fff;
 		-webkit-border-radius: 3px;
