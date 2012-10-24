@@ -20,8 +20,10 @@
 				<span class="date_article">
 				<?php the_time('l ~ M d, Y ~ h:ia')?>
 				</span>
-				<div class="clear"></div>
-				<?php the_content(); ?><p>&nbsp;</p>
+				<div class="clear">&nbsp;</div>
+				<div class="single_content">
+					<?php the_content(); ?><p>&nbsp;</p>
+				</div>
 				<?php
 					if(get_comments_number() > 0){
 				?>

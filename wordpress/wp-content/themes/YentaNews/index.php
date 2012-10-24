@@ -26,7 +26,9 @@
 					<?php the_title(); ?>
 				</a>
 				<div class="clear"></div>
-				<?php echo_first_image(get_the_ID());?>
+				<a href="<?php esc_url( the_permalink() ); ?>" title="<?php the_title(); ?>">
+					<?php echo_first_image(get_the_ID());?>
+				</a>
 				<?php strip_tags(the_advanced_excerpt()); ?>
 				<div class="bottom_links">
 					<a href="<?php esc_url(the_permalink());?>" class="read_on">Read On...</a> | 

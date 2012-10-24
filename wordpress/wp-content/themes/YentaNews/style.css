@@ -190,7 +190,9 @@ body{
 	margin: 0;
 	float: left;
 	width: 650px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .right_sidebar{
@@ -199,7 +201,9 @@ body{
 	float: right;
 	margin: 15px 15px 0 0;
 	background: #999;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .news_home{
@@ -507,6 +511,25 @@ body{
 
 
 
+
+
+
+.wp-caption{
+	float: left;
+	background: #DDD;
+	margin: 0 15px 15px 0;
+	padding: 10px 5px 10px 10px;
+}
+
+.wp-caption img{
+	border: 1px solid #000;
+	margin-bottom: 10px;
+}
+
+p.wp-caption-text{
+	font-size: 11px;
+	line-height: 1.2em;
+}
 
 
 
